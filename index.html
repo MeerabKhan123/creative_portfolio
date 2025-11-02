@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">🌙</button>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-toggle" id="navToggle">
+            <span style="color: white; font-size: 1.5rem;">☰</span>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#" class="nav-item" id="homeLink">Home</a>
+            <a href="#" class="nav-item" id="projectsLink">Projects</a>
+            <a href="#" class="nav-item" id="aboutLink">About</a>
+            <a href="#" class="nav-item" id="contactLink">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header id="homeSection">
+            <h1 class="hero-title">Meerab Khan </h1>
+            <p class="hero-subtitle">Building Beautiful Digital Experiences</p>
+        </header>
+
+        <div class="projects-grid" id="projectsSection">
+            <div class="project-card" data-project="uiux">
+                <div class="project-icon">🎨</div>
+                <h3 class="project-title">UI/UX Design</h3>
+                <p class="project-description">Creating intuitive and beautiful user interfaces that delight users and drive engagement.</p>
+                <div class="skills">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">Sketch</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="webdev">
+                <div class="project-icon">💻</div>
+                <h3 class="project-title">Web Development</h3>
+                <p class="project-description">Building responsive and performant websites using modern web technologies.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="mobile">
+                <div class="project-icon">📱</div>
+                <h3 class="project-title">Mobile Apps</h3>
+                <p class="project-description">Developing cross-platform mobile applications that work seamlessly on all devices.</p>
+                <div class="skills">
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Swift</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="performance">
+                <div class="project-icon">🚀</div>
+                <h3 class="project-title">Performance</h3>
+                <p class="project-description">Optimizing applications for speed, efficiency, and excellent user experience.</p>
+                <div class="skills">
+                    <span class="skill-tag">Optimization</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Analytics</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about-section" id="aboutSection">
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="about-image">
+    <img src="aboutpic.jfif" alt="Your Name" 
+         style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 5px solid rgba(255, 255, 255, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+          </div>
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p> I'm a passionate Creative Developer with 6 months of hands-on experience in building engaging digital products that users love. My journey began with a curiosity for how things work, which quickly grew into a passion for creating beautiful and functional web experiences.
+
+                   I believe in the power of design and technology to bring ideas to life. My approach blends creativity with technical skill to deliver solutions that are visually appealing, user-friendly, and impactful.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">months Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 class="modal-title" id="modalTitle">Project Title</h2>
+            <p class="modal-description" id="modalDescription">Project description goes here.</p>
+            <div class="modal-features">
+                <h3>Key Features</h3>
+                <ul id="modalFeatures">
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="viewProject">View Project</button>
+                <button class="modal-btn secondary" id="closeProject">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form" id="contactForm">
+        <div class="form-content">
+            <span class="close-modal" id="closeForm">&times;</span>
+            <h2 class="modal-title">Get In Touch</h2>
+            <form id="contactFormElement">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
