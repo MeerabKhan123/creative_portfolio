@@ -19,7 +19,7 @@ Smooth Animations: Floating shapes and fade-in effects
 Navigation: Smooth scrolling navigation menu
 
 ## 🚀 Live Demo
-View Live Website
+https://portfoliocreativity.netlify.app/
 
 ## 🛠️ Technologies Used
 HTML5 - Semantic markup
